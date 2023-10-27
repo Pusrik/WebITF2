@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setName() {
+            const namefeild = document.getElementById("user");
+            const name = namefeild.value;
+            const title = document.getElementById("profile-link");
+            title.innerText = name + " Profile";
+        }
+
+        function setImage() {
+            const picture = document.getElementById("profile-image");
+            const profileimage = document.getElementById("imageurl");
+            const prointerface = "url(" + profileimage.value + ")";
+            picture.style.background = prointerface
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="profile-image" class="parent">
+            <div class="child"></div>
+        </div>
+        <a id="profile-link" href="https://github.com/" target="_blank">My Profile</a>
+        <div class="row">
+            <p>Set The Username</p>
+            <input id="user" type="text" />
+            <button onclick="setName()">Set</button>
+        </div>
+        <div class="row">
+            <p>Set The Profile Image URL</p>
+            <input id = "imageurl" type="text" />
+            <button onclick="setImage()">Set</button>
+       </div>
+        <div class="gallery">
+            <div id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-row" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>

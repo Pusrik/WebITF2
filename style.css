@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black solid;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq9pkcTChUtFfwu1pR1u1ZjcOk_IXBiI8M2zKIc7o3h1LLO_L1kBwe6JiI-x-xve372mk&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+    border-radius: 9999px;
+}
+
+.child {
+    position: absolute;
+        top: 70%;
+        left: 70%;
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+}
+
+p {
+    margin: 0;
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.gallery .image {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+#extend-col {
+    grid-column: span 2;
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 100%;
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 100%;
+}
+
+#profile-link {
+    font-size: 36px;
+}
+
+#profile-link:hover {
+    color: blue;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url(https://www.pockettactics.com/wp-content/sites/pockettactics/2023/01/project-sekai-download-2-550x309.jpeg);
+}
+
+.gallery .image:nth-child(2) {
+    background-image: url(https://i.pinimg.com/236x/4e/64/af/4e64af219dd457acac6d2b9659dad533.jpg);
+}
+
+.gallery .image:nth-child(3) {
+    background-image: url(https://i1.sndcdn.com/artworks-THUdrCSIcDbyYzfM-6ds2aQ-t500x500.jpg);
+}
+
+.gallery .image:nth-child(4) {
+    background-image: url(https://i1.sndcdn.com/artworks-Hv79F3JeIz9oqj1Y-nAhQpw-t500x500.jpg);
+}
+
+.gallery .image:nth-child(5) {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1936014258289772356/ED6D7CFC221A0D7F032674513D6EAE1FD207E05F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+}
+
+.gallery .image:nth-child(6) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQrLMiPopGu8KoZSMj2dr-63vfMWtHcAOtg&usqp=CAU);
+}
+
+.gallery .image:nth-child(7) {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1796351328366076533/4920676F032E60A4615BCAF3B06A5450AD613EB1/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+}
+
+.gallery .image:nth-child(8) {
+    background-image: url(https://s3.zerochan.net/240/33/38/3519433.jpg);
+}
+
+.gallery .image:nth-child(9) {
+    background-image: url(https://i1.sndcdn.com/artworks-NNUo1yq6is7S3o1s-uVUifA-t500x500.jpg);
+}
+
+.gallery .image:nth-child(10) {
+    background-image: url(https://i1.sndcdn.com/artworks-2DeRk59NevhD4888-NXYxIw-t500x500.jpg);
+}
