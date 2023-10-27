@@ -75,10 +75,13 @@ p {
 }
 
 #profile-link {
+    color: black;
     font-size: 36px;
+    text-decoration: none;
 }
 
 #profile-link:hover {
+    text-decoration: underline;
     color: blue;
 }
 
